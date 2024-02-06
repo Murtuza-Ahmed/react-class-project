@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // FUNCTION SHOPPING-LIST
 function ShopingList() {
   const [item, setItem] = useState([]);
@@ -14,6 +16,7 @@ function ShopingList() {
             value={item}
             onChange={(item) => setItem(item.target.value)}
           />
+          <FontAwesomeIcon icon={"face-awesome"} />
           <button>ADD</button>
         </div>
         <ul></ul>
