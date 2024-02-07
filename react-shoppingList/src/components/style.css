@@ -101,3 +101,44 @@ input:focus {
     display: flex;
     justify-content: space-between;
 }
+
+.remove-button {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.total {
+    float: right;
+    padding: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ec645b;
+    background: #fff;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #ec645b;
+    min-width: 70px;
+    justify-content: space-between;
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin: 0.4rem;
+    color: #ec645b;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
