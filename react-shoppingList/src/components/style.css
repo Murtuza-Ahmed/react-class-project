@@ -11,97 +11,93 @@ html {
 }
 
 body {
-    background-color: rgba(251 3 3 / 84%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
 }
 
-.main-list {
-    margin: 5rem;
+.ShopingList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.app-background {
+    background-color: #bee3ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: linear-gradient(135deg, #fb0202, #fff);
-    padding: 2rem;
-    height: auto;
-    border-radius: 2px;
+    min-height: 100vh;
 }
 
-.input-filed {
-    margin: 0 0 2rem 0;
+.main-container {
+    background-color: #ec645b;
+    width: 500px;
+    height: min-content;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 10px 10px 26px 0 rgba(0, 0, 0, 0.35);
+}
+
+.title {
+    text-align: center;
+}
+
+.add-item-box {
+    background-color: #fbc1bb;
+    color: #ec645b;
+    margin: 1em 0 0 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.add-item-box svg {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.add-item-input {
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: #ec645b;
     width: 100%;
-}
-
-input-filed,
-input {
-    width: 73%;
-    padding: 1rem;
-    outline: none;
-    border-radius: 2px;
-    border-style: none;
-    margin: 1rem 2rem auto;
-    font-size: 1rem;
-    font-weight: 800;
-    font-style: italic;
+    height: 30px;
 }
 
 input::placeholder {
+    color: #ec645b;
     font-size: 1rem;
-    font-weight: bold;
-    font-style: normal;
 }
 
-input-filed,
-button {
-    padding: 1rem;
-    outline: none;
-    border-radius: 2px;
-    border-style: none;
+input:focus {
+    outline: 0;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #fbc1bb;
+}
+
+.item-name {
     cursor: pointer;
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: decimal-leading-zero;
-    width: 100%;
+.item-name svg {
+    margin: 0 5px 0 5px;
 }
 
-ul li {
-    background-color: transparent;
-    border-radius: 1px;
-    border: 1px solid #000;
-    padding: 0.5rem 2rem;
-    margin: 1rem;
-    font-size: 1rem;
-    font-weight: bolder;
-}
-
-ul li p {
-    font-size: 1.20rem;
-    text-transform: capitalize;
-}
-
-@media only screen and (min-width:300px) and (max-width:475px) {
-    .main-list {
-        margin: 0;
-        background: transparent;
-    }
-
-    .input-filed input {
-        margin: 0;
-    }
-
-    .input-filed button {
-        background-color: #000;
-        color: #fff;
-    }
-}
-
-@media only screen and (min-width:475px) and (max-width:768px) {
-    .input-filed input {
-        margin: 0 4px;
-    }
+.item-action-buttons {
+    display: flex;
+    justify-content: space-between;
 }
