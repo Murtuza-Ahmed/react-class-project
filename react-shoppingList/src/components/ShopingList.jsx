@@ -34,6 +34,10 @@ function ShopingList() {
     newItems[index].quantity++;
     setItem(newItems);
   }
+  // HANDLE QUANTITY DE-INCRASE BUTTON LEFT ICON
+  function handleQuantityDeIncrease(index) {
+    console.log(index)
+  }
   return (
     <div className="app-background">
       <div className="main-container">
@@ -68,7 +72,9 @@ function ShopingList() {
               </div>
               <div className="quantity">
                 <button>
-                  <FaChevronLeft />
+                  <FaChevronLeft
+                    onClick={() => handleQuantityDeIncrease(index)}
+                  />
                 </button>
                 <span>{item.quantity}</span>
                 <button>
