@@ -17,6 +17,7 @@ function ShopingList() {
     { itemName: "item 3", quantity: 3, isSelected: false },
   ]);
   const [inputValue, setInputValue] = useState("");
+  const [totalItemCount, setTotalItemCount] = useState(5);
   // HANDLE ADD BUTTON PLUS ICON
   function handleAddButtonClick() {
     const newItem = {
@@ -33,12 +34,25 @@ function ShopingList() {
     const newItems = [...item];
     newItems[index].quantity++;
     setItem(newItems);
+    calculateTotal();
   }
   // HANDLE QUANTITY DE-INCRASE BUTTON LEFT ICON
   function handleQuantityDecrease(index) {
     const newItems = [...item];
     newItems[index].quantity--;
     setItem(newItems);
+    calculateTotal();
+  }
+  function toggleComplete(index) {
+    const newItems = [...item];
+    newItems[index].isSelected = !newItems[index].isSelected;
+    setItem(newItems);
+  }
+  function calculateTotal() {
+    const totalItemCount = item.reduce((total, item) => {
+      return total + item.quantity;
+    }, 0);
+    setTotalItemCount(totalItemCount);
   }
   return (
     <div className="app-background">
@@ -57,7 +71,7 @@ function ShopingList() {
           {/* MAP FUNCTION */}
           {item.map((item, index) => (
             <div className="item-container">
-              <div className="item-name">
+              <div className="item-name" onClick={() => toggleComplete(index)}>
                 {/* HINT: replace false with a boolen
                 indicating the item has been completed or not */}
                 {item.isSelected ? (
@@ -88,7 +102,7 @@ function ShopingList() {
             </div>
           ))}
         </div>
-        <div className="total">Total: </div>
+        <div className="total">Total:{totalItemCount} </div>
       </div>
     </div>
   );
