@@ -8,7 +8,6 @@ import {
   FaChevronLeft,
   FaChevronRight,
 } from "react-icons/fa";
-
 //  FUNCTION SHOPPING-LIST
 function ShopingList() {
   // HINT: Each "item" in our list names a name,
@@ -20,7 +19,6 @@ function ShopingList() {
   ]);
   const [inputValue, setInputValue] = useState("");
   const [totalItemCount, setTotalItemCount] = useState(5);
-
   // HANDLE ADD BUTTON PLUS ICON
   function handleAddButtonClick() {
     const newItem = {
@@ -32,7 +30,6 @@ function ShopingList() {
     setItem(newItems);
     setInputValue("");
   }
-
   // HANDLE QUANTITY INCREASE BUTTON RIGHT ICON
   function handleQuantityIncrease(index) {
     const newItems = [...item];
@@ -40,7 +37,6 @@ function ShopingList() {
     setItem(newItems);
     calculateTotal();
   }
-
   // HANDLE QUANTITY DE-INCRASE BUTTON LEFT ICON
   function handleQuantityDecrease(index) {
     const newItems = [...item];
@@ -48,13 +44,11 @@ function ShopingList() {
     setItem(newItems);
     calculateTotal();
   }
-
   function toggleComplete(index) {
     const newItems = [...item];
     newItems[index].isSelected = !newItems[index].isSelected;
     setItem(newItems);
   }
-
   function calculateTotal() {
     const totalItemCount = item.reduce((total, item) => {
       return total + item.quantity;
