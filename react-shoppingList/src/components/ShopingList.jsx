@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./style.css";
-import HandleAddButtonClick from "./handleAddButtonClick";
 import {
   FaPlus,
   FaCheckCircle,
@@ -18,7 +17,7 @@ function ShopingList() {
     { itemName: "item 3", quantity: 3, isSelected: false },
   ]);
   const [inputValue, setInputValue] = useState("");
-  const [totalItemCount, setTotalItemCount] = useState(5);
+  const [totalItemCount, setTotalItemCount] = useState(6);
   // HANDLE ADD BUTTON PLUS ICON
   function handleAddButtonClick() {
     const newItem = {
