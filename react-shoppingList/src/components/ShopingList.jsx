@@ -26,7 +26,12 @@ function ShopingList() {
       isSelected: false,
     };
     const newItems = [...item, newItem];
-    setItem(newItems);
+    if (newItem.itemName === "") {
+      alert("Please Enter the Item");
+    } else {
+      setItem(newItems);
+      calculateTotal();
+    }
     setInputValue("");
   }
   // HANDLE QUANTITY INCREASE BUTTON RIGHT ICON
@@ -65,7 +70,7 @@ function ShopingList() {
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
           />
-          <FaPlus onClick={() => HandleAddButtonClick()} />
+          <FaPlus onClick={() => handleAddButtonClick()} />
         </div>
         <div className="item-list">
           {/* MAP FUNCTION */}
