@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style.css";
-function CallBack() {
+// CHILD
+function CallBack({ getColor }) {
   const [activeColor, setActiveColor] = useState("");
   const [UIcolor, setUIColor] = useState(null);
   function handleChange(item) {
