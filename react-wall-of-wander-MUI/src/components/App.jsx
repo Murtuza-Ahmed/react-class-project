@@ -2,6 +2,7 @@ import Header from "./Header";
 import Banner from "./Benner";
 import Mission from "./Mission";
 import PopularPrint from "../components/component/PopularPrint";
+import FeaturedPrint from "./FeaturedPrint";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
       <Banner />
       <Mission />
       <PopularPrint />
+      <FeaturedPrint />
     </>
   );
 }
