@@ -1,367 +1,392 @@
-* {
+:root {
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #ee9800;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+html {
     box-sizing: border-box;
-    color: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
-    background-color: #81a69b;
-    background-image: url(http://pets-images.dev-apis.com/pets/wallpaperB.jpg);
     margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(25, 55, 155, 0.15);
 }
 
-.search-params {
-    width: 1100px;
-    margin: 0 auto;
-}
-
-.search-params form {
-    border-radius: 6px;
-    background: #faeff0;
-    box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
-    width: 360px;
-    margin: 0px 25px 0px 0px;
-    padding: 35px 15px 15px 15px;
-    float: left;
-}
-
-.search {
-    border-radius: 6px;
-    background: #faeff0;
-    box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
-    width: 715px;
-    padding: 15px;
-    float: left;
-    margin-bottom: 25px;
-}
-
-.details {
-    width: 1100px;
-    margin: 0 auto;
-    padding: 15px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-    background: #faeff0;
-    box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
-}
-
-.pet {
-    width: 100%;
-    height: 130px;
-    display: block;
-    overflow: hidden;
-    margin: 25px 0;
-    border-bottom: #333 2px solid;
-}
-
-.pet img {
-    width: 100px;
-    min-height: 100px;
-}
-
-.info {
-    float: left;
-    width: 80%;
-    height: 100px;
-    padding-top: 10px;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.image-container {
-    clip-path: circle(50% at 50% 50%);
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin: 0px 20px 0px 10px;
-}
-
-.pet h1 {
-    white-space: nowrap;
-    font-weight: normal;
-    font-size: 30px;
-    color: #333;
-    width: 95%;
-    overflow: hidden;
-    margin: 0;
-    text-overflow: ellipsis;
-}
-
-header>a,
-#root>div>h1 {
-    display: inline-block;
-    background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-logo.png);
-    filter: brightness(150%);
-    width: 279px;
-    height: 76px;
-    overflow: hidden;
-    text-indent: -9999px;
-    margin: 20px 0;
-}
-
-.pet h2 {
-    white-space: nowrap;
-    font-weight: normal;
-    font-size: 20px;
-    margin: 0;
-    text-overflow: ellipsis;
-}
-
-header a {
-    color: #333;
-    font-size: 3px;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding-bottom: 10px;
+/* -------------------------------------------------------------Header Style---------------------------------------------------------- */
+.header {
+    background-color: var(--color5);
 }
 
 header {
+    padding: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 1100px;
-    margin: 0 auto;
-    padding: 20px 0px 0px 0px;
-}
-
-.details p {
-    line-height: 1.5;
-    padding: 0px 15px;
-}
-
-.details h1 {
-    text-align: center;
-    color: #333;
-    font-size: 60px;
-    margin: 5px 0px;
-}
-
-.details h2 {
-    text-align: center;
-    margin: 5px 0px 20px 0px;
-}
-
-.carousel {
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    height: 400px;
-    margin-top: 8px;
 }
 
-.carousel>img {
-    max-width: 45%;
-    max-height: 400px;
+nav li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
 }
 
-.carousel-smaller {
-    width: 50%;
-}
-
-.carousel-smaller>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 15px;
-    cursor: pointer;
-    border: 2px solid #333;
-}
-
-.carousel-smaller>img.active {
-    border-color: #333;
-    opacity: 0.6;
-}
-
-.search-params label {
-    display: block;
-    width: 60px;
-}
-
-.search-params input,
-.search-params select {
-    margin-bottom: 30px;
-    font-size: 18px;
-    height: 30px;
-    width: 325px;
-}
-
-.search-params button,
-#modal button,
-#modal a,
-.details button {
-    background-color: #ad343e;
-    padding: 5px 25px;
-    color: white;
-    font-size: 18px;
-    border: #333 1px solid;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-#modal a {
-    display: inline-block;
-    margin-right: 15px;
+nav a {
     text-decoration: none;
-}
-
-.search-params button:hover {
-    background-color: #122622;
-}
-
-.search-params button:active {
-    background-color: #5f1d22;
-}
-
-.search-params button:focus {
-    border: 1px solid cornflowerblue;
-}
-
-#modal {
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#modal:empty {
-    display: none;
-}
-
-#modal>div {
-    background-color: white;
-    max-width: 500px;
-    padding: 15px;
+    color: var(--color1);
+    font-size: 1rem;
+    font-weight: 500;
     text-align: center;
-    border-radius: 30px;
-    background: #faeff0;
+    background-color: var(--color4);
+    border-radius: 5px;
+    padding: 0.5rem 1.50rem;
+    display: block;
 }
 
-#modal .buttons button {
-    display: inline-block;
-    margin-right: 15px;
+nav ul li:first-child>a {
+    background-color: transparent;
 }
 
-@media only screen and (max-width: 1129px) {
-    header {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 95%;
-        margin: 0 auto;
-        padding: 20px 0px 0px 0px;
-    }
-
-    .search-params {
-        width: 95%;
-    }
-
-    .search-params form {
-        margin-bottom: 20px;
-    }
-
-    .search {
-        width: 55%;
-        padding: 15px;
-        border-radius: 9px;
-        float: left;
-        margin-bottom: 25px;
-    }
-
-    .details {
-        width: 95%;
-        margin: 0 auto;
-        padding: 15px;
-        border-radius: 9px;
-        margin-bottom: 25px;
-    }
-
-    .info {
-        width: 65%;
-    }
-
-    .info h1 {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .info h2 {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
 }
 
-@media only screen and (max-width: 945px) {
-    .search-params {
-        width: 95%;
-    }
-
-    .search {
-        width: 100%;
-    }
+nav ul a:hover {
+    background-color: var(--color1);
+    color: var(--color4);
 }
 
-@media only screen and (max-width: 600px) {
-    .pet {
-        height: 200px;
-    }
+/* ==========================================================Header Style End================================================ */
 
-    .info {
-        width: 100%;
-        text-align: center;
-    }
-
-    .image-container {
-        margin: 0 auto;
-        float: none;
-    }
-
-    .carousel-smaller>img {
-        width: 60px;
-        height: 60px;
-    }
+/* ----------------------------------------------------------Banner Style Start---------------------------------------------- */
+#hero {
+    background-color: var(--color8);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
 
-.loading-pane {
-    align-items: center;
-    justify-content: center;
+#hero img {
+    max-height: 450px;
+    max-width: 100%;
+}
+
+/* ==========================================================Banner Style End================================================ */
+
+/* ----------------------------------------------------------Our Mission Start----------------------------------------------- */
+section {
+    margin: 0 auto 5rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+}
+
+#mission {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2.20rem;
+}
+
+.missioning {
+    max-height: 100px;
+    display: block;
+}
+
+.mission-text p {
+    font-size: 1rem;
+    /* letter-spacing: 1px; */
+    line-height: 1.5;
+    display: block;
+}
+
+/* ==========================================================Our Mission End================================================= */
+
+/* ----------------------------------------------------------Popular Style Start--------------------------------------------- */
+.stripe {
+    background-color: var(--color2);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+section #popular-prints {
+    max-width: 1400px;
+    margin: 0 0 0.5rem 0;
+    padding: 0 1rem;
+}
+
+figure {
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0 auto 0.5rem auto;
+    position: relative;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    /* padding: 0; */
+}
+
+figure img {
+    object-fit: cover;
+    object-position: 0;
+    width: 100%;
+    height: 400px;
+}
+
+/* section .li {
     display: flex;
-    padding: 15px;
+    justify-content: center;
+    align-items: center;
+} */
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1.20rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
 }
 
-form .pet {
-    float: unset;
-    margin: 0 auto;
+figcaption a {
+    text-decoration: none;
+    font-size: 1.80rem;
+    color: #000;
+    display: block;
 }
 
-.loader {
-    font-size: 100px;
-    animation: spin 1s linear infinite;
+.color-red,
+.color-red a:hover {
+    border-color: var(--color9);
+    color: var(--color9);
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
+.color-orange,
+.color-orange a:hover {
+    border-color: var(--color7);
+    color: var(--color7);
+}
+
+.color-green,
+.color-green a:hover {
+    border-color: var(--color4);
+    color: var(--color4);
+}
+
+/* ==========================================================Popular Style End=============================================== */
+
+/* ----------------------------------------------------------Featured Print Start-------------------------------------------- */
+.color-yellow,
+.color-yellow a:hover {
+    border-color: var(--color6);
+    color: var(--color6);
+}
+
+#featured-print figure img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: fill;
+    object-position: center;
+}
+
+/* ==========================================================Featured Print End============================================== */
+
+/* ----------------------------------------------------------Collections Style Start----------------------------------------- */
+.color-blue,
+.color-blue a:hover {
+    border-color: var(--color2);
+    color: var(--color2);
+}
+
+.color-skyblue,
+.color-skyblue a:hover {
+    border-color: var(--color3);
+    color: var(--color3);
+}
+
+/* ==========================================================Collections Style End=========================================== */
+
+/* ----------------------------------------------------------Footer Style Start---------------------------------------------- */
+.footer {
+    background-color: var(--color5);
+}
+
+footer {
+    padding: 3rem;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.social li {
+    margin-right: 1rem;
+}
+
+footer address {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ==========================================================Footer Style End================================================ */
+
+/* ==========================================================Media Qeury Mobile============================================== */
+@media(min-width: 500px) {
+    header {
+        padding: 2rem;
+    }
+
+    nav li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        padding: 0;
+        color: #000;
+        background-color: transparent;
+        font-weight: 530;
+        /* text-align: center; */
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    nav ul a:hover {
+        background-color: transparent;
+        color: var(--color1);
+    }
+
+    .mission-text {
+        display: flow-root;
+        max-width: 1200px;
+    }
+
+    .missioning {
+        float: left;
+        shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+        max-width: 250px;
+    }
+
+    .ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ul .li {
+        flex-basis: 48%;
+    }
+
+    #popular-prints .ul .li:last-child {
+        flex-basis: 100%;
+    }
+
+    #featured-print figure img {
+        max-height: 400px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        flex-basis: 50%;
     }
 }
 
-.mini.loading-pane {
-    height: 34px;
+/* ==========================================================Media Qeury Desktop============================================= */
+@media(min-width: 800px) {
+    header {
+        padding: 2rem 5rem;
+    }
+
+    nav ul li:first-child {
+        flex-basis: auto;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3) {
+        order: 1;
+    }
+
+    nav ul li:nth-child(4),
+    nav ul li:nth-child(5) {
+        order: 3;
+    }
+
+    nav a {
+        font-weight: 540;
+        /* letter-spacing: 0.1rem; */
+    }
+
+    .missioning {
+        max-width: 300px;
+    }
+
+    .ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .ul .li {
+        flex-basis: 32%;
+    }
+
+    #popular-prints .ul .li:last-child {
+        flex-basis: 32%;
+    }
+
+    footer .social {
+        flex-basis: 42%;
+    }
 }
 
-.mini .loader {
-    font-size: 34px;
+/* ==========================================================Media Large Screen============================================== */
+@media(min-width: 1440px) {
+    footer {
+        margin-left: 10rem;
+    }
+}
+
+@media(min-width: 1500px) and (max-width: 2560px) {
+    footer {
+        margin-left: 45rem;
+    }
 }
