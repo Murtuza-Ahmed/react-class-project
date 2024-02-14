@@ -1,4 +1,5 @@
 import eyeing from "../../assets/image/eyeing-you.jpg";
+import PopularPrintChilds from "./Popular-print-childs";
 function PopularPrintChild() {
   return (
     <>
@@ -17,6 +18,7 @@ function PopularPrintChild() {
           </figcaption>
         </figure>
       </div>
+      <PopularPrintChilds />
     </>
   );
 }
