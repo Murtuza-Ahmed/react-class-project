@@ -22,10 +22,10 @@ function PopularPrint() {
                 </figcaption>
               </figure>
             </div>
+            <PopularPrintChild />
           </div>
         </section>
       </div>
-      <PopularPrintChild />
     </>
   );
 }

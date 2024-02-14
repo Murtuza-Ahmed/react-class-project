@@ -5,7 +5,7 @@ function PopularPrintChild() {
       <div className="stripe">
         <section id="popular-prints">
           <div className="ul">
-            <div class="li">
+            <div className="li">
               <figure className="color-orange">
                 <img src={eyeing} alt="Eyeing-You" />
                 <figcaption>
