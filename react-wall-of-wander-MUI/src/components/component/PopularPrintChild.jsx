@@ -1,4 +1,4 @@
-import eyeing from "../assets/image/eyeing-you.jpg";
+import eyeing from "../../assets/image/eyeing-you.jpg";
 function PopularPrintChild() {
   return (
     <>

@@ -1,4 +1,4 @@
-import forkit from "../assets/image/fork-it-up.jpg";
+import forkit from "../../assets/image/fork-it-up.jpg";
 import PopularPrintChild from "./PopularPrintChild";
 function PopularPrint() {
   return (

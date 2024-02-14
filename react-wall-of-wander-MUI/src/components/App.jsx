@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Banner from "./Benner";
 import Mission from "./Mission";
-import PopularPrint from "./PopularPrint";
+import PopularPrint from "../components/component/PopularPrint";
 function App() {
   return (
     <>
