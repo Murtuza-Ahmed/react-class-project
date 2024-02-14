@@ -1,4 +1,5 @@
 import forkit from "../assets/image/fork-it-up.jpg";
+import PopularPrintChild from "./PopularPrintChild";
 function PopularPrint() {
   return (
     <>
@@ -24,6 +25,7 @@ function PopularPrint() {
           </div>
         </section>
       </div>
+      <PopularPrintChild />
     </>
   );
 }
