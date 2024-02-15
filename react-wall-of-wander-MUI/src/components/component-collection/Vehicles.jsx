@@ -1,4 +1,5 @@
 import vehicles from "../../assets/image/vehicles.jpg";
+import LandScape from "./LandScape";
 function Vehicles() {
   return (
     <>
@@ -16,6 +17,7 @@ function Vehicles() {
           </figcaption>
         </figure>
       </div>
+      <LandScape />
     </>
   );
 }
