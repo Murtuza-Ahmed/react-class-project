@@ -1,4 +1,5 @@
 import vivid from "../../assets/image/vivid.jpg";
+import Muisc from "./Music";
 function Vivid() {
   return (
     <>
@@ -16,6 +17,7 @@ function Vivid() {
           </figcaption>
         </figure>
       </div>
+      <Muisc />
     </>
   );
 }
