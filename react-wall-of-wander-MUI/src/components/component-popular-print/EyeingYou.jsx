@@ -1,6 +1,6 @@
 import eyeing from "../../assets/image/eyeing-you.jpg";
-import PopularPrintChilds from "./Popular-print-childs";
-function PopularPrintChild() {
+import LetScoot from "./LetScoot";
+function EyeingYou() {
   return (
     <>
       <div className="li">
@@ -18,9 +18,9 @@ function PopularPrintChild() {
           </figcaption>
         </figure>
       </div>
-      <PopularPrintChilds />
+      <LetScoot />
     </>
   );
 }
 
-export default PopularPrintChild;
+export default EyeingYou;

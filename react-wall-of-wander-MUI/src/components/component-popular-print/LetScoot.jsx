@@ -1,5 +1,5 @@
 import scooty from "../../assets/image/lets-scoots.jpg";
-function PopularPrintChilds() {
+function LetScoot() {
   return (
     <>
       <div className="li">
@@ -21,4 +21,4 @@ function PopularPrintChilds() {
   );
 }
 
-export default PopularPrintChilds;
+export default LetScoot;

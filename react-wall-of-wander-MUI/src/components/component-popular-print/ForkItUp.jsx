@@ -1,6 +1,6 @@
 import forkit from "../../assets/image/fork-it-up.jpg";
-import PopularPrintChild from "./PopularPrintChild";
-function PopularPrint() {
+import EyeingYou from "./EyeingYou";
+function ForkItUp() {
   return (
     <>
       <div className="stripe">
@@ -22,7 +22,7 @@ function PopularPrint() {
                 </figcaption>
               </figure>
             </div>
-            <PopularPrintChild />
+            <EyeingYou />
           </div>
         </section>
       </div>
@@ -30,4 +30,4 @@ function PopularPrint() {
   );
 }
 
-export default PopularPrint;
+export default ForkItUp;
