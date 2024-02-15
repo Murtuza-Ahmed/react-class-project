@@ -4,6 +4,7 @@ import Mission from "./Mission";
 import PopularPrint from "./component-popular-print/PopularPrint";
 import FeaturedPrint from "./FeaturedPrint";
 import Collection from "./component-collection/Collection";
+import Footer from "./Footer";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <PopularPrint />
       <FeaturedPrint />
       <Collection />
+      <Footer />
     </>
   );
 }
