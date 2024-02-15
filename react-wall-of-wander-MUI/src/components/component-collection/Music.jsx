@@ -1,4 +1,5 @@
 import music from "../../assets/image/music.jpg";
+import Vehicles from "./Vehicles";
 function Muisc() {
   return (
     <>
@@ -15,6 +16,7 @@ function Muisc() {
           </figcaption>
         </figure>
       </div>
+      <Vehicles />
     </>
   );
 }
