@@ -1,4 +1,5 @@
 import abstract from "../../assets/image/abstract.jpg";
+import Vivid from "./Vivid";
 function Abstract() {
   return (
     <>
@@ -16,6 +17,7 @@ function Abstract() {
           </figcaption>
         </figure>
       </div>
+      <Vivid />
     </>
   );
 }
