@@ -1,4 +1,5 @@
 import popArt from "../../assets/image/pop-art.jpg";
+import Abstract from "./Abstract";
 function PopArt() {
   return (
     <>
@@ -19,6 +20,7 @@ function PopArt() {
               </figcaption>
             </figure>
           </div>
+          <Abstract />
         </div>
       </section>
     </>
