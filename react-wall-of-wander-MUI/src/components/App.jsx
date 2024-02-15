@@ -1,8 +1,9 @@
 import Header from "./Header";
 import Banner from "./Benner";
 import Mission from "./Mission";
-import PopularPrint from "../components/component/PopularPrint";
+import PopularPrint from "./component/PopularPrint";
 import FeaturedPrint from "./FeaturedPrint";
+import Collection from "./component-collection/Collection";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Mission />
       <PopularPrint />
       <FeaturedPrint />
+      <Collection />
     </>
   );
 }
