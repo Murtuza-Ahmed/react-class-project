@@ -3,7 +3,7 @@ import "./style.css";
 // CHILD
 function CallBack({ getColor }) {
   const [activeColor, setActiveColor] = useState("");
-  const [UIcolor, setUIColor] = useState(null);
+  const [UIcolor, setUIColor] = useState("");
   function handleChange(item) {
     const value = item.target.value;
     setActiveColor(value);
