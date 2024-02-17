@@ -4,14 +4,14 @@ import "./style.css";
 // PARENT
 function App() {
   return (
-    <div className="App">
-      {/* //   <div
+    // <div className="App">
+    //   {/* <div
     //     className="App-color-container"
     //     style={{ background: `${UIcolor}` }}
     //   ></div>
     //   <CallBack /> */}
-      <CallBack />
-    </div>
+    // </div>
+    <CallBack />
   );
 }
 export default App;
