@@ -66,5 +66,11 @@ header {
         cursor: pointer;
       }
     }
+    .drop-up,
+    .drop-down {
+      font-size: 2rem;
+      color: $bg-color;
+      display: none;
+    }
   }
 }
