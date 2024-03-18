@@ -4,28 +4,14 @@ const Header = () => {
     <div>
       <header>
         <nav>
-          <div className="logo">
-            <h2>M.S</h2>
-          </div>
-          <div className="ul">
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Project</li>
-              <li>Contact</li>
-            </ul>
-            <ul>
-              <div className="icon">
-                <li>
-                  <FaSearch />
-                </li>
-                <div className="login-button">
-                  <button>Login</button>
-                </div>
-              </div>
-            </ul>
-          </div>
+          <h1>M.S</h1>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Sevices</li>
+            <li>Project</li>
+            <li>Contact</li>
+          </ul>
         </nav>
       </header>
     </div>
