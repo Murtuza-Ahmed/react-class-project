@@ -44,5 +44,27 @@ header {
         color: $color2;
       }
     }
+    .icon-button {
+      position: absolute;
+      top: -18px;
+      left: 10px;
+    }
+    .icon-button ul li {
+      margin: 0 1rem;
+    }
+    .icon-button button {
+      background-color: $color1;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      color: $text-color;
+      padding: 0.5rem 2.5rem;
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      margin-left: 1rem;
+      &:focus {
+        cursor: pointer;
+      }
+    }
   }
 }

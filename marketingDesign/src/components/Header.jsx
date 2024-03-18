@@ -11,6 +11,14 @@ const Header = () => {
             <li>Sevices</li>
             <li>Project</li>
             <li>Contact</li>
+            <div className="icon-button">
+              <ul>
+                <li>
+                  <FaSearch />
+                </li>
+                <button>Login</button>
+              </ul>
+            </div>
           </ul>
         </nav>
       </header>
