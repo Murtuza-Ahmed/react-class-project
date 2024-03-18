@@ -1,4 +1,8 @@
 import { FaSearch } from "react-icons/fa";
+import {
+  IoIosArrowDropupCircle,
+  IoIosArrowDropdownCircle,
+} from "react-icons/io";
 const Header = () => {
   return (
     <div>
@@ -18,6 +22,12 @@ const Header = () => {
                 </li>
                 <button>Login</button>
               </ul>
+            </div>
+            <div className="drop-up">
+              <IoIosArrowDropupCircle />
+            </div>
+            <div className="drop-down">
+              <IoIosArrowDropdownCircle />
             </div>
           </ul>
         </nav>
