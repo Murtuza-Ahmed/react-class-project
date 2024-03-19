@@ -64,3 +64,38 @@ body {
 .input-box button:focus {
   cursor: pointer;
 }
+
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-size: 1.50rem;
+}
+
+.calculator .day span {
+  color: var(--color-text);
+}
+
+.calculator .month span {
+  color: var(--color-text);
+}
+
+.calculator .year span {
+  color: var(--color-text);
+}
+
+.calculator .day .minus-day {
+  color: #008000;
+  font-weight: bold;
+}
+
+.calculator .month .minus-month {
+  color: #008000;
+  font-weight: bold;
+}
+
+.calculator .year .minus-year {
+  color: #FF0000;
+  font-weight: bold;
+}
