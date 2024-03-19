@@ -99,3 +99,26 @@ body {
   color: #FF0000;
   font-weight: bold;
 }
+
+
+@media only screen and (min-width:320px) and (max-width:430px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .calculator {
+    flex-direction: column;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-box input {
+    margin-bottom: 1rem;
+  }
+}
