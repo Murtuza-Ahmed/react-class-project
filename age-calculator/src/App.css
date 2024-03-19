@@ -1,0 +1,33 @@
+:root {
+  --color-text: #00FFFF;
+  --bg-color: rgba(67, 99, 99, 0);
+  --span-text: #7FFFD4;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.container h1 {
+  color: var(--color-text);
+}
+
+.container h1 span {
+  color: var(--span-text);
+}
