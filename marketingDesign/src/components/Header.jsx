@@ -1,4 +1,5 @@
 import { FaSearch } from "react-icons/fa";
+import Toggle from "./Toggle";
 
 const Header = () => {
   return (
@@ -26,6 +27,7 @@ const Header = () => {
                 <button>Sign In</button>
               </div>
             </div>
+            <Toggle />
           </nav>
         </header>
       </div>
