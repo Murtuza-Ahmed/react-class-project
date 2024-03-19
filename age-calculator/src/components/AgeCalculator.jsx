@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../App.css";
 const AgeCalculator = () => {
-
   return (
     <div>
       <div className="container">
