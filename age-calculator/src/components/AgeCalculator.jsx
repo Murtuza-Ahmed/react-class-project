@@ -1,21 +1,7 @@
 import { useState } from "react";
 import "../App.css";
 const AgeCalculator = () => {
-  const [age, setAge] = useState("");
-  const [day, setDay] = useState("");
-  function CalculateAge() {
-    let userDate = new Date(age);
-    let currentDate = new Date();
-    let userDay = userDate.getDay();
-    let userMonth = userDate.getMonth();
-    let userYear = userDate.getFullYear();
-    let currentDay = currentDate.getDay();
-    let currentMonth = currentDate.getMonth();
-    let currentYear = currentDate.getFullYear();
-    let setDay = userDay - currentDay;
-    let minusMonth = userMonth - currentMonth;
-    let minusYear = currentYear - userYear;
-  }
+
   return (
     <div>
       <div className="container">
