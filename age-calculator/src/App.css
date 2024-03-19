@@ -2,6 +2,7 @@
   --color-text: #00FFFF;
   --bg-color: rgba(67, 99, 99, 0);
   --span-text: #7FFFD4;
+  --button: rgb(23, 211, 201);
 }
 
 *,
@@ -21,13 +22,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 80vh;
 }
 
 .container h1 {
   color: var(--color-text);
+  margin-bottom: 2rem;
 }
 
 .container h1 span {
   color: var(--span-text);
+}
+
+.input-box {
+  padding: 1rem;
+}
+
+.input-box input {
+  padding: .20rem 2rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: .5px solid var(--span-text);
+  outline: none;
+  background-color: var(--bg-color);
+  margin: 0 1rem 0 1rem;
+}
+
+.input-box button {
+  padding: .20rem 2rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: .5px solid var(--bg-color);
+  outline: none;
+  background-color: var(--button);
+  color: #FFF;
+}
+
+.input-box button:focus {
+  cursor: pointer;
 }
