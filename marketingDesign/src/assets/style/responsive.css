@@ -1,0 +1,36 @@
+@media only screen and (min-width:320px) and (max-width:375px) {
+    .container header nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    .container .ul ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .container ul li {
+        margin: 0 220px 1rem 0;
+    }
+
+    .container .logo {
+        margin: 0 15rem 1rem 0;
+    }
+
+    .container .main .icon {
+        margin: 0 2rem 0 -135px;
+    }
+
+    .icon-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}

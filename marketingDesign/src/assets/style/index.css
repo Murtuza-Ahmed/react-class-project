@@ -96,3 +96,7 @@ header {
     cursor: pointer;
     background-color: var(--text-color);
 }
+
+.icon-toggle {
+    display: none;
+}
