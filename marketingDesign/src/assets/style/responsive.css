@@ -37,4 +37,15 @@
     .icon-toggle .toggle-close {
         display: none;
     }
+
+    .visible {
+        display: flex;
+        top: 0;
+    }
+
+    .hidden {
+        display: flex;
+        top: -100%;
+        color: red;
+    }
 }
